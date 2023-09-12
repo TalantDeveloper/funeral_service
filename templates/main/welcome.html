@@ -1,0 +1,437 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- slider section -->
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="header_top">
+                <div class="container-fluid ">
+                    <div class="contact_nav">
+                        <a href="tel:+998995907850">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>
+                            Вызов : +01 123455678990
+                            </span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>
+                            Почта : demo@gmail.com
+                            </span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span>
+                                Расположение
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg custom_nav-container ">
+                        <a class="navbar-brand" href="#">
+              <span>
+                Ритуальные услуги
+                  <img src="{% static 'images/favoricon.svg' %}" alt="" width="50">
+              </span>
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class=""> </span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{% url 'main:welcome' %}">Главная <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Услуги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> О нас</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Связаться с нами</a>
+                                </li>
+                                <!--
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i>
+                                        Login</a>
+                                </li>
+                                -->
+                                <form class="form-inline" method="get">
+
+                                    <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- end header section -->
+
+        <section class="slider_section ">
+            <div class="slider_bg_box">
+                <img src="{% static 'images/Ritualnye.jpg' %}" alt="">
+            </div>
+            <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-7 ">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Ритуальные услуги <br>
+                                            в Ташкенте и области
+                                        </h1>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magnam,
+                                            voluptates
+                                            distinctio, officia architecto tenetur debitis hic aspernatur libero commodi
+                                            atque fugit adipisci, blanditiis quidem dolorum odit voluptas? Voluptate,
+                                            eveniet?
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="" class="btn1">
+                                                Get A Quote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-7 ">
+                                    <div class="detail-box">
+                                        <h1>
+                                            We Provide best <br>
+                                            Transport Service
+                                        </h1>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magnam,
+                                            voluptates
+                                            distinctio, officia architecto tenetur debitis hic aspernatur libero commodi
+                                            atque fugit adipisci, blanditiis quidem dolorum odit voluptas? Voluptate,
+                                            eveniet?
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="" class="btn1">
+                                                Get A Quote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-7 ">
+                                    <div class="detail-box">
+                                        <h1>
+                                            We Provide best <br>
+                                            Transport Service
+                                        </h1>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magnam,
+                                            voluptates
+                                            distinctio, officia architecto tenetur debitis hic aspernatur libero commodi
+                                            atque fugit adipisci, blanditiis quidem dolorum odit voluptas? Voluptate,
+                                            eveniet?
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="" class="btn1">
+                                                Get A Quote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+                    <li data-target="#customCarousel1" data-slide-to="1"></li>
+                    <li data-target="#customCarousel1" data-slide-to="2"></li>
+                </ol>
+            </div>
+
+        </section>
+    </div>
+    <!-- end slider section -->
+
+    <!-- service section -->
+
+    <section class="service_section layout_padding">
+        <div class="service_container">
+            <div class="container ">
+                <div class="heading_container">
+                    <h2>
+                        Our <span>Services</span>
+                    </h2>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="{% static 'images/s1.png' %}" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Air Transport
+                                </h5>
+                                <p>
+                                    fact that a reader will be distracted by the readable content of a page when looking
+                                    at
+                                    its layout.
+                                    The
+                                    point of using
+                                </p>
+                                <a href="">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="{% static 'images/s2.png' %}" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Cargo Transport
+                                </h5>
+                                <p>
+                                    fact that a reader will be distracted by the readable content of a page when looking
+                                    at
+                                    its layout.
+                                    The
+                                    point of using
+                                </p>
+                                <a href="">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="{% static 'images/s3.png' %}" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Trucks Transport
+                                </h5>
+                                <p>
+                                    fact that a reader will be distracted by the readable content of a page when looking
+                                    at
+                                    its layout.
+                                    The
+                                    point of using
+                                </p>
+                                <a href="">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="{% static 'images/s4.png' %}" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Train Transport
+                                </h5>
+                                <p>
+                                    fact that a reader will be distracted by the readable content of a page when looking
+                                    at
+                                    its layout.
+                                    The
+                                    point of using
+                                </p>
+                                <a href="">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end service section -->
+
+
+    <!-- about section -->
+
+    <section class="about_section layout_padding-bottom">
+        <div class="container  ">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h2>
+                                About <span>Us</span>
+                            </h2>
+                        </div>
+                        <p>
+                            Ритуальное агентство работает для того, чтобы освободить Вас от траурных хлопот, которые
+                            весьма тяжко переносить в дни, последовавшие после смерти близких людей.
+                            Наше ритуальное бюро берёт на себя все организационные моменты, связанные с погребением,
+                            чтобы родственники могли проводить умершего в последний путь, не отвлекаясь на мирские
+                            заботы.
+                        </p>
+                        <a href="">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="img-box">
+                        <img src="{% static 'images/about-img.jpg' %}" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end about section -->
+
+    <!-- track section -->
+
+    <section class="track_section layout_padding">
+        <div class="track_bg_box">
+            <img src="{% static 'images/title.jpg' %}" height="auto" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="heading_container">
+                        <h2>
+                            Track Your Shipment
+                        </h2>
+                    </div>
+                    <p>
+                        Iste reprehenderit maiores facilis saepe cumque molestias. Labore iusto excepturi, laborum
+                        aliquid
+                        pariatur veritatis autem, mollitia sint nesciunt hic error porro.
+                        Deserunt officia unde repellat beatae ipsum sed. Aperiam tempora consectetur voluptas magnam
+                        maxime
+                        asperiores quas similique repudiandae, veritatis reiciendis harum fuga atque.
+                    </p>
+                    <form method="POST">
+                        <input type="text" placeholder="Enter Your Tracking Number"/>
+                        <button type="submit">
+                            Track
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end track section -->
+
+    <!-- client section -->
+
+    <!-- end client section -->
+
+    <!-- contact section -->
+    <section class="contact_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 offset-md-1">
+                    <div class="heading_container">
+                        <h2>
+                            Contact Us
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-5 offset-md-1">
+                    <div class="form_container contact-form">
+                        <form action="">
+                            <div>
+                                <input type="text" placeholder="Your Name"/>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Phone Number"/>
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email"/>
+                            </div>
+                            <div>
+                                <input type="text" class="message-box" placeholder="Message"/>
+                            </div>
+                            <div class="btn_box">
+                                <button>
+                                    SEND
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 px-0">
+                    <div class="map_container">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe src="https://maps.google.com/maps?q=%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D0%A1%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                        frameborder="0" scrolling="no" style="width: 850px; height: 420px;"></iframe>
+                                <style>.mapouter {
+                                    position: relative;
+                                    height: 420px;
+                                    width: 850px
+                                }
+
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    height: 420px;
+                                    width: 850px
+                                }
+
+                                .gmap_canvas iframe {
+                                    position: relative;
+                                    z-index: 2
+                                }
+
+                                .gmap_canvas a {
+                                    top: 0;
+                                    z-index: 0
+                                }</style>
+                                <a href="https://www.eireportingonline.com">ei reporting online</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact section -->
+
+{% endblock %}

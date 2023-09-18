@@ -4,6 +4,11 @@ from .forms import MessageForm
 
 
 def welcome_view(request):
+    if request.method == 'POST':
+        form = MessageForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('main:success')
     return render(request, 'main/welcome.html')
 
 
@@ -20,5 +25,9 @@ def contact_view(request):
         form = MessageForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/')
+            return redirect('main:success')
     return render(request, 'main/contact.html')
+
+
+def success_view(request):
+    return render(request, 'main/success.html')

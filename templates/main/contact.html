@@ -1,288 +1,163 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base_sub.html' %}
+{% load static %}
+{% block content %}
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/fevicon.png" type="">
+    <!-- slider section -->
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="header_top">
+                <div class="container-fluid ">
+                    <div class="contact_nav">
+                        <a href="tel:+998995907850">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>
+                            Вызов : +01 123455678990
+                            </span>
+                        </a>
+                        <a href="mailto:demo@gmail.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>
+                            Почта : demo@gmail.com
+                            </span>
+                        </a>
+                        <a href="https://www.google.com/maps/place/Toshkent+davlat+stomatologiya+instituti+eski/@41.3087803,69.299029,19.01z/data=!4m6!3m5!1s0x38aef527cfd7beab:0x41490626bc752d26!8m2!3d41.309198!4d69.2990049!16s%2Fg%2F11bzs4xs68?entry=ttu"
+                           target="_blank">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span>
+                                Расположение
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg custom_nav-container ">
+                        <a class="navbar-brand" href="{% url 'main:welcome' %}">
+                            <span>
+                                Ритуальные услуги
+                                <img src="{% static 'images/favoricon.svg' %}" alt="" width="50">
+                            </span>
+                        </a>
 
-  <title> Carint </title>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class=""> </span>
+                        </button>
 
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'main:welcome' %}">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'main:service' %}">
+                                        Услуги
+                                    </a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{% url 'main:about' %}">
+                                        О нас
+                                        <span class="sr-only">(current)</span>
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+                                    </a>
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{% url 'main:contact' %}">
+                                        Связаться с нами
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- end header section -->
+    </div>
+    <!-- end slider section -->
 
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-
-</head>
-
-<body class="sub_page">
-
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="header_top">
-        <div class="container-fluid ">
-          <div class="contact_nav">
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +01 123455678990
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                Email : demo@gmail.com
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Location
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="header_bottom">
+    <!-- contact section -->
+    <section class="contact_section">
+        <br><br>
         <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <span>
-                Carint
-              </span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span> </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-                </li>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
-              </ul>
+            <div class="row">
+                <div class="col-lg-4 col-md-5 offset-md-1">
+                    <div class="heading_container">
+                        <h2>
+                            СВЯЗАТЬСЯ С НАМИ
+                        </h2>
+                    </div>
+                </div>
             </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-5 offset-md-1">
+                    <div class="form_container contact-form">
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <div>
+                                <input name="name" type="text" placeholder="Ваше имя"/>
+                            </div>
+                            <div>
+                                <input name="number" type="text" placeholder="Номер телефона"/>
+                            </div>
+                            <div>
+                                <input name="email" type="email" placeholder="Почта"/>
+                            </div>
+                            <div>
+                                <input name="message" type="text" class="message-box" placeholder="Сообщение"/>
+                            </div>
+                            <div class="btn_box">
+                                <button>
+                                    ОТПРАВЛЯТЬ
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 px-0">
+                    <div class="map_container">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe src="https://maps.google.com/maps?q=%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D0%A1%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                        frameborder="0" scrolling="no" style="width: 850px; height: 420px;"></iframe>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        height: 420px;
+                                        width: 850px
+                                    }
 
-  <!-- contact section -->
-  <section class="contact_section layout_padding-top">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4 col-md-5 offset-md-1">
-          <div class="heading_container">
-            <h2>
-              Contact Us
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-5 offset-md-1">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-lg-7 col-md-6 px-0">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        height: 420px;
+                                        width: 850px
+                                    }
+
+                                    .gmap_canvas iframe {
+                                        position: relative;
+                                        z-index: 2
+                                    }
+
+                                    .gmap_canvas a {
+                                        top: 0;
+                                        z-index: 0
+                                    }</style>
+                                <a href="https://www.eireportingonline.com">ei reporting online</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- end contact section -->
+    </section>
+    <!-- end contact section -->
 
-  <!-- info section -->
-
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                <img src="images/nav-bullet.png" alt="">
-                Home
-              </a>
-              <a class="" href="about.html">
-                <img src="images/nav-bullet.png" alt="">
-                About
-              </a>
-              <a class="" href="service.html">
-                <img src="images/nav-bullet.png" alt="">
-                Services
-              </a>
-
-              <a class="" href="contact.html">
-                <img src="images/nav-bullet.png" alt="">
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end info section -->
-
-  <!-- footer section -->
-  <section class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
-  </section>
-  <!-- footer section -->
-
-  <!-- jQery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
-  <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
-
-</body>
-
-</html>
+{% endblock %}

@@ -13,7 +13,6 @@ $textCol: #1f1f1f;
 }
 
 
-
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
   display: inline-block;
   padding: $pad1 $pad2;
@@ -32,7 +31,6 @@ $textCol: #1f1f1f;
   text-transform: uppercase;
   font-weight: bold;
 }
-
 
 
 body {
@@ -178,7 +176,6 @@ a:focus {
 }
 
 
-
 .navbar-brand {
   span {
     font-weight: bold;
@@ -214,7 +211,6 @@ a:focus {
 }
 
 
-
 .custom_nav-container .nav_search-btn {
   width: 35px;
   height: 35px;
@@ -226,7 +222,6 @@ a:focus {
     color: $black;
   }
 }
-
 
 
 .custom_nav-container .navbar-toggler {
@@ -341,7 +336,7 @@ a:focus {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to right, rgba($color: #252525, $alpha:0.9), rgba($color: #252525, $alpha:0.7));
+      background: linear-gradient(to right, rgba($color: #252525, $alpha: 0.9), rgba($color: #252525, $alpha: 0.7));
     }
   }
 
@@ -455,7 +450,8 @@ a:focus {
         text-transform: uppercase;
       }
 
-      p {}
+      p {
+      }
 
       a {
         color: $primary2;
@@ -467,7 +463,8 @@ a:focus {
       }
     }
 
-    &:hover {}
+    &:hover {
+    }
   }
 }
 
@@ -557,7 +554,7 @@ a:focus {
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to right, rgba($color: #252525, $alpha:0.95), rgba($color: #252525, $alpha:0.55));
+      background: linear-gradient(to right, rgba($color: #252525, $alpha: 0.95), rgba($color: #252525, $alpha: 0.55));
     }
   }
 
@@ -753,7 +750,6 @@ a:focus {
 // end contact section
 
 
-
 // info section
 .info_section {
   background-color: $primary2;
@@ -828,7 +824,6 @@ a:focus {
   }
 
 
-
   form {
     input {
       border: none;
@@ -872,6 +867,597 @@ a:focus {
     }
   }
 }
+
+
+#rt_services {
+  padding: 120px 0;
+  background: #f9f9f9
+}
+
+#rt_services .caption-box {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+
+@media only screen and (max-width: 1200px) {
+  #rt_services .caption-box {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px
+  }
+}
+
+#rt_services .caption-box img {
+  margin: 0;
+  padding: 0;
+  float: left;
+  z-index: 4
+}
+
+@media only screen and (max-width: 1200px) {
+  #rt_services .caption-box img {
+    width: 100%
+  }
+}
+
+#rt_services .caption-box .caption {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  transition: all .45s ease-in-out
+}
+
+@media only screen and (max-width: 1200px) {
+  #rt_services .caption-box .caption {
+    width: 100%
+  }
+}
+
+#rt_services .caption-box .blur {
+  background-color: #c29f24;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 5;
+  position: absolute
+}
+
+@media only screen and (max-width: 767px) {
+  #rt_services .caption-box .blur {
+    width: 130%
+  }
+}
+
+#rt_services .caption-box .caption-wrapper {
+  float: left;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 370px;
+  height: 250px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important
+}
+
+@media only screen and (max-width: 1200px) {
+  #rt_services .caption-box .caption-wrapper {
+    width: 100%
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1200px) {
+  #rt_services .caption-box .caption-wrapper {
+    height: 350px
+  }
+}
+
+#rt_services .caption-wrapper:hover .caption, #rt_services .latest-cases a:hover .caption-wrapper .caption {
+  opacity: 1
+}
+
+#rt_services .arrow-cricle {
+  border: solid 1px rgba(47, 12, 152, .3);
+  width: 26px;
+  height: 26px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  line-height: 24px;
+  transition: all .45s ease-in-out;
+  position: relative
+}
+
+#rt_services .arrow-cricle i {
+  color: #296c96;
+  font-size: 16px;
+  transition: all .45s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -45%)
+}
+
+#rt_services .arrow-cricle:hover, #rt_services .latest-cases a:hover .arrow-cricle {
+  background: #fff;
+  border-color: #fff
+}
+
+#rt_services .latest-cases {
+  margin: 84px auto
+}
+
+#rt_services .latest-cases .heading-label {
+  border-bottom: solid 1px rgba(208, 210, 209, .2);
+  display: block;
+  margin: 0 auto;
+  text-align: center
+}
+
+#rt_services .latest-cases .heading-label span {
+  min-width: 196px;
+  background: #fff;
+  padding: 5px 20px;
+  color: #898989;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block
+}
+
+#rt_services .latest-cases a {
+  overflow: hidden;
+  display: block;
+  margin: 43px auto 0
+}
+
+#rt_services .heading-arrow {
+  transition: all .45s ease-in-out;
+  display: block;
+  overflow: hidden;
+  padding: 20px 0 53px;
+  border-top: solid 4px rgba(255, 255, 255, .5)
+}
+
+#rt_services .heading-arrow h3 {
+  font-size: 20px;
+  line-height: 30px
+}
+
+#rt_services .heading-arrow h3, #rt_services .heading-arrow .arrow-cricle {
+  float: left;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 auto
+}
+
+#rt_services .heading-arrow .arrow-cricle {
+  float: right;
+  text-align: center;
+  color: #fff;
+  border-color: #ffffff80
+}
+
+#rt_services .heading-arrow .arrow-cricle i {
+  color: #fff
+}
+
+#rt_services .arrow-cricle:hover i, #rt_services .latest-cases a:hover .arrow-cricle i {
+  color: #c29f24
+}
+
+#rt_services .latest-cases a:hover .heading-arrow {
+  border-color: #c29f24
+}
+
+#rt_services .caption-wrapper .caption-text {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 20;
+  padding: 20px
+}
+
+#rt_services .caption-wrapper .caption-text p {
+  color: #fff
+}
+
+#rt_services .overlay-content {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #105c8e66
+}
+
+#rt_services .overlay-content .heading-arrow {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  border: none
+}
+
+#rt_services .overlay-content .heading-arrow h3 {
+  border-bottom: solid 4px #C29F24;
+  padding-bottom: 10px;
+  width: 68%;
+  font-weight: 800
+}
+
+#rt_services .practice-areas .caption-text .heading-arrow {
+  padding: 0 0 10px;
+  border: none
+}
+
+#rt_services .practice-areas .caption-text .heading-arrow h3 {
+  border-bottom: solid 4px #C2B256;
+  padding-bottom: 10px;
+  width: 68%;
+  font-weight: 800
+}
+
+#rt_services .practice-areas .col-lg-4 {
+  margin-top: 15px;
+  margin-bottom: 15px
+}
+
+#rt_services .practice-areas .col-lg-4 a:hover .heading-arrow .arrow-cricle {
+  background: #fff
+}
+
+#rt_services .practice-areas .col-lg-4 a:hover .heading-arrow .arrow-cricle i {
+  color: #c29f24
+}
+
+#rt_services .practice-areas .heading-label {
+  margin-bottom: 65px
+}
+
+#rt_services .practice-areas .heading-label span {
+  background: #C29F24;
+  color: #fff
+}
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px
+  }
+}
+
+
+.container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+@media (min-width: 768px) {
+  .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+    margin-right: 0;
+    margin-left: 0
+  }
+}
+
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px
+  }
+}
+
+
+.container .jumbotron, .container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px
+}
+
+.jumbotron .container {
+  max-width: 100%
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px
+  }
+
+  .container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px
+  }
+
+  .jumbotron .h1, .jumbotron h1 {
+    font-size: 63px
+  }
+}
+
+
+@media only screen and (min-width: 520px) and (max-width: 620px) {
+  .container {
+    width: 480px
+  }
+}
+
+.expect-wrapper .container {
+  padding: 0 100px
+}
+
+@media only screen and (max-width: 991px) {
+  .expect-wrapper .container {
+    padding: 0 15px
+  }
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+  display: table;
+  content: " "
+}
+
+.btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+  clear: both
+}
+
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: left
+  }
+
+  .col-sm-12 {
+    width: 100%
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .case_studies .latest-cases .grid-masonry .col-lg-4.col-sm-12.grid-item {
+    width: 100%
+  }
+}
+
+
+#rt_services .practice-areas .caption-text .heading-arrow {
+  padding: 0 0 10px;
+  border: none
+}
+
+#rt_services .practice-areas .caption-text .heading-arrow h3 {
+  border-bottom: solid 4px #C2B256;
+  padding-bottom: 10px;
+  width: 68%;
+  font-weight: 800
+}
+
+#rt_services .practice-areas .col-lg-4 {
+  margin-top: 15px;
+  margin-bottom: 15px
+}
+
+#rt_services .practice-areas .col-lg-4 a:hover .heading-arrow .arrow-cricle {
+  background: #fff
+}
+
+#rt_services .practice-areas .col-lg-4 a:hover .heading-arrow .arrow-cricle i {
+  color: #c29f24
+}
+
+#rt_services .practice-areas .heading-label {
+  margin-bottom: 65px
+}
+
+#rt_services .practice-areas .heading-label span {
+  background: #C29F24;
+  color: #fff
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+    float: left
+  }
+  .col-lg-4 {
+    width: 33.33333333%
+  }
+}
+
+@media only screen and (max-width: 991px) {
+    .case_studies .latest-cases .grid-masonry .col-lg-4.col-sm-12.grid-item {
+        width: 100%
+    }
+}
+
+
+#rt_banner.banner_cases .caption-box {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%
+}
+
+#rt_banner.banner_cases .caption-box img {
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 4;
+    width: 100%
+}
+
+#rt_banner.banner_cases .caption-box .caption-wrapper {
+    float: left;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important
+}
+
+#rt_banner.banner_cases .caption-box .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    transition: all .45s ease-in-out
+}
+
+#rt_banner.banner_cases .caption-box .blur {
+    background-color: #c29f24;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 5;
+    position: absolute
+}
+
+
+.case_studies .caption-box {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%
+}
+
+.case_studies .caption-box img {
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 4;
+    width: 100%
+}
+
+.case_studies .caption-box .caption-wrapper {
+    float: left;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important
+}
+
+.case_studies .caption-box .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    transition: all .45s ease-in-out
+}
+
+.case_studies .caption-box .blur {
+    background-color: #c29f24;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 5;
+    position: absolute
+}
+
+
+#rt_services .caption-box {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+@media only screen and (max-width: 1200px) {
+    #rt_services .caption-box {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px
+    }
+}
+
+#rt_services .caption-box img {
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 4
+}
+
+@media only screen and (max-width: 1200px) {
+    #rt_services .caption-box img {
+        width: 100%
+    }
+}
+
+#rt_services .caption-box .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    transition: all .45s ease-in-out
+}
+
+@media only screen and (max-width: 1200px) {
+    #rt_services .caption-box .caption {
+        width: 100%
+    }
+}
+
+#rt_services .caption-box .blur {
+    background-color: #c29f24;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 5;
+    position: absolute
+}
+
+@media only screen and (max-width: 767px) {
+    #rt_services .caption-box .blur {
+        width: 130%
+    }
+}
+
+#rt_services .caption-box .caption-wrapper {
+    float: left;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 370px;
+    height: 250px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important
+}
+
+@media only screen and (max-width: 1200px) {
+    #rt_services .caption-box .caption-wrapper {
+        width: 100%
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1200px) {
+    #rt_services .caption-box .caption-wrapper {
+        height: 350px
+    }
+}
+
 
 
 // end footer section

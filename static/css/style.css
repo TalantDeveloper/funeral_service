@@ -448,10 +448,10 @@ a:focus {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 125px;
-  min-width: 75px;
-  height: 75px;
-  margin-right: 25px;
+  width: 305px;
+  min-width: 155px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .service_section .box .img-box img {

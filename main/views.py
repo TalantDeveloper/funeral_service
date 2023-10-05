@@ -1,19 +1,21 @@
+from django.contrib import messages
 from django.shortcuts import render, redirect
-from .models import Message
+from .models import Message, Service
 from .forms import MessageForm
+from .function import post_success
 
 
 def welcome_view(request):
+    services = Service.objects.all()
     if request.method == 'POST':
-        form = MessageForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('main:success')
-    return render(request, 'main/welcome.html')
+        return post_success(request)
+    return render(request, 'main/welcome.html', {'services': services})
 
 
 def service_view(request):
-    return render(request, 'main/service.html')
+    services = Service.objects.all()
+
+    return render(request, 'main/service.html', {'services': services})
 
 
 def about_view(request):
@@ -22,10 +24,7 @@ def about_view(request):
 
 def contact_view(request):
     if request.method == 'POST':
-        form = MessageForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('main:success')
+        return post_success(request)
     return render(request, 'main/contact.html')
 
 

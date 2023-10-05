@@ -342,7 +342,7 @@ a:focus {
   color: #04233b;
 }
 
-.slider_section .detail-box h1 {
+.slider_section .detail-box h1, h3 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;

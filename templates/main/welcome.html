@@ -19,7 +19,7 @@
                             </span>
                         </a>
                         <a href="mailto:demo@gmail.com">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
                             <span>
                             Почта : demo@gmail.com
                             </span>
@@ -94,33 +94,12 @@
                                             Ритуальные услуги <br>
                                             в Ташкенте и области
                                         </h1>
-                                        <h3>
-                                            <a href="tel:+998995907850" style="color: white;">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <span>
-                                                    Вызов : +998995907850
-                                                </span>
-                                            </a>
-                                        </h3>
-                                        <h3>
-                                            <a href="tel:+998995907850" style="color: white;">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <span>
-                                                    Вызов : +998995907850
-                                                </span>
-                                            </a>
-                                        </h3>
-                                        <h3>
-                                            <a href="tel:+998995907850" style="color: white;">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <span>
-                                                    Вызов : +998995907850
-                                                </span>
-                                            </a>
+                                        <h3 style="color: #0a97b0;">
+                                            <i class="fa fa-clock-o"></i> Работаем круглосуточно
                                         </h3>
                                         <div class="btn-box">
                                             <a href="tel:+998995907850" class="btn1">
-                                                Получить цену
+                                                Позвонить нам
                                             </a>
                                         </div>
                                     </div>
@@ -137,33 +116,12 @@
                                             Ритуальные услуги <br>
                                             в Ташкенте и области
                                         </h1>
-                                        <h3>
-                                            <a href="tel:+998995907850">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <span>
-                                                    Вызов : +01 1234567890
-                                                </span>
-                                            </a>
-                                        </h3>
-                                        <h3>
-                                            <a href="tel:+998995907850">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <span>
-                                                    Вызов : +01 1234567890
-                                                </span>
-                                            </a>
-                                        </h3>
-                                        <h3>
-                                            <a href="tel:+998995907850">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <span>
-                                                    Вызов : +01 1234567890
-                                                </span>
-                                            </a>
+                                        <h3 style="color: #0a97b0;">
+                                            <i class="fa fa-clock-o"></i> Работаем круглосуточно
                                         </h3>
                                         <div class="btn-box">
-                                            <a href="#" class="btn1">
-                                                Получить цену
+                                            <a href="tel:+998995907850" class="btn1">
+                                                Позвонить нам
                                             </a>
                                         </div>
                                     </div>
@@ -180,33 +138,12 @@
                                             Ритуальные услуги <br>
                                             в Ташкенте и области
                                         </h1>
-                                        <h3>
-                                            <a href="tel:+998995907850">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <span>
-                                                    Вызов : +01 1234567890
-                                                </span>
-                                            </a>
-                                        </h3>
-                                        <h3>
-                                            <a href="tel:+998995907850">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <span>
-                                                    Вызов : +01 1234567890
-                                                </span>
-                                            </a>
-                                        </h3>
-                                        <h3>
-                                            <a href="tel:+998995907850">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                                <span>
-                                                    Вызов : +01 1234567890
-                                                </span>
-                                            </a>
+                                        <h3 style="color: #0a97b0;">
+                                            <i class="fa fa-clock-o"></i> Работаем круглосуточно
                                         </h3>
                                         <div class="btn-box">
-                                            <a href="#" class="btn1">
-                                                Получить цену
+                                            <a href="tel:" class="btn1">
+                                                Позвонить нам
                                             </a>
                                         </div>
                                     </div>
@@ -239,168 +176,26 @@
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/10.jpg' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Гробы
-                                </h5>
-                                <p>
-                                    Цена договорная
-                                </p>
-                                <a href="{% url 'main:service' %}">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/20.jpg' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Таблички, фото, памятники
-                                </h5>
-                                <p>
-                                    Цена договорная
-                                </p>
-                                <a href="{% url 'main:service' %}">
-                                    Подробнее
-                                </a>
+                    {% for service in services %}
+                        <div class="col-md-6 ">
+                            <div class="box ">
+                                <div class="img-box">
+                                    <img src="{{ service.image.url }}" alt="">
+                                </div>
+                                <div class="detail-box">
+                                    <h5>
+                                        {{ service.name }}
+                                    </h5>
+                                    <p>
+                                        {{ service.content }}
+                                    </p>
+                                    <a href="tel:">
+                                        Подробнее
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/30.jpg' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Венки и ленты
-                                </h5>
-                                <p>
-                                    Цена договорная
-                                </p>
-                                <a href="{% url 'main:service' %}">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/40.jpg' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Одежда для усопших
-                                </h5>
-                                <p>
-                                    Цена договорная
-                                </p>
-                                <a href="{% url 'main:service' %}">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/50.jpg' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Ритуальный текстиль, похоронные наборы
-                                </h5>
-                                <p>
-                                    Цена договорная
-                                </p>
-                                <a href="{% url 'main:service' %}">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/60.jpg' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Церковная лавка, свечи
-                                </h5>
-                                <p>
-                                    Церковная лавка, свечи
-                                </p>
-                                <a href="{% url 'main:service' %}">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/70.jpg' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Услуги и доставка
-                                </h5>
-                                <p>
-                                    Организация отпевания. Чтение псалтыря.
-                                </p>
-                                <a href="{% url 'main:service' %}">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/7c8x2EtrKB5UdITGHBd0H0ejyFXalbQkprQWw66D.jpg' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Организация отпевания, чтение псалтиря
-                                </h5>
-                                <p>
-                                    Организация отпевания. Чтение псалтыря.
-                                </p>
-                                <a href="{% url 'main:service' %}">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/7c8x2EtrKB5UdITGHBd0H0ejyFXalbQkprQWw66D.jpg' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Организация отпевания, чтение псалтиря
-                                </h5>
-                                <p>
-                                    Организация отпевания. Чтение псалтыря.
-                                </p>
-                                <a href="{% url 'main:service' %}">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

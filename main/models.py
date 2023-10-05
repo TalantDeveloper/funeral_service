@@ -9,3 +9,12 @@ class Message(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Service(models.Model):
+    name = models.CharField(max_length=300, verbose_name='сервис')
+    content = models.TextField(verbose_name='content')
+    image = models.ImageField(upload_to='./image/')
+
+    def __str__(self):
+        return self.name

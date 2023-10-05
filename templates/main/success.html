@@ -90,7 +90,10 @@
                     <div class="detail-box">
                         <div class="heading_container">
                             <h2>
-                                Эргашов Ботирджон <span>Ваше сообщение отправлено.</span>
+                                {% for message in messages %}
+                                	{{ message }}
+                                {% endfor %}
+                                <span>Ваше сообщение отправлено.</span>
                             </h2>
                         </div>
                         <p>

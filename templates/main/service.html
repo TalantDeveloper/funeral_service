@@ -94,80 +94,27 @@
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/120.png' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Омовение тела, бальзамирование, сухой лед, хранение в морге
-                                </h5>
-                                <p>
-                                    Санитарно-гигиеническая и предпохоронная подготовка тела усопшего и его сохранение
-                                    до дня похорон
-                                </p>
-                                <a href="tel:+998995907850">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/121.png' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Гроб, венки, крест
-                                </h5>
-                                <p>
-                                    Подбор гроба, креста, венков по вашему желания.
-                                </p>
-                                <a href="tel:+998995907850">
-                                    Подробнее
-                                </a>
+                    {% for service in services %}
+                        <div class="col-md-6 ">
+                            <div class="box ">
+                                <div class="img-box">
+                                    <img src="{{ service.image.url }}" alt="">
+                                </div>
+                                <div class="detail-box">
+                                    <h5>
+                                        {{ service.name }}
+                                    </h5>
+                                    <p>
+                                        {{ service.content }}
+                                    </p>
+                                    <a href="tel:">
+                                        Подробнее
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/122.png' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Одежда, погребальный набор
-                                </h5>
-                                <p>
-                                    Наборы для погребения (церковный, корейский, армянский). Одежда для мужчин и для
-                                    женщин полный комплект по размеру.
-                                </p>
-                                <a href="tel:+998995907850">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{% static 'images/123.png' %}" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Организация отпевания, чтение псалтиря
-                                </h5>
-                                <p>
-                                    Организация отпевания. Чтение псалтыря.
-                                </p>
-                                <a href="tel:+998995907850">
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
+
                 </div>
             </div>
         </div>

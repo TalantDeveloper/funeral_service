@@ -12,13 +12,13 @@
             <div class="header_top">
                 <div class="container-fluid ">
                     <div class="contact_nav">
-                        <a href="tel:+998903529097">
+                        <a href="tel:+998903529097" target="_blank">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                             <span>
                             Вызов : +998903529097
                             </span>
                         </a>
-                        <a href="https://t.me/Ritualniyuslugi">
+                        <a href="https://t.me/Ritualniyuslugi" target="_blank">
                             <i class="fa fa-telegram" aria-hidden="true"></i>
                             <span>
                                 Нодир
@@ -97,6 +97,14 @@
                                         <h3 style="color: #0a97b0;">
                                             <i class="fa fa-clock-o"></i> Работаем круглосуточно
                                         </h3>
+                                        <i class="text-white">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:+99890 352 90 97" class="text-white">+998903529097</a> &nbsp;
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:+99898 707 90 97" class="text-white">+998987079097</a> &nbsp;
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:+99833 077 75 77" class="text-white">+998330777577</a>
+                                        </i>
                                         <div class="btn-box">
                                             <a href="tel:+998903529097" class="btn1">
                                                 Позвонить нам
@@ -119,6 +127,14 @@
                                         <h3 style="color: #0a97b0;">
                                             <i class="fa fa-clock-o"></i> Работаем круглосуточно
                                         </h3>
+                                        <i class="text-white">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:+99890 352 90 97" class="text-white">+998903529097</a> &nbsp;
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:+99898 707 90 97" class="text-white">+998987079097</a> &nbsp;
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:+99833 077 75 77" class="text-white">+998330777577</a>
+                                        </i>
                                         <div class="btn-box">
                                             <a href="tel:+998903529097" class="btn1">
                                                 Позвонить нам
@@ -141,6 +157,14 @@
                                         <h3 style="color: #0a97b0;">
                                             <i class="fa fa-clock-o"></i> Работаем круглосуточно
                                         </h3>
+                                        <i class="text-white">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:+99890 352 90 97" class="text-white">+998903529097</a> &nbsp;
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:+99898 707 90 97" class="text-white">+998987079097</a> &nbsp;
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="tel:+99833 077 75 77" class="text-white">+998330777577</a>
+                                        </i>
                                         <div class="btn-box">
                                             <a href="tel:+998903529097" class="btn1">
                                                 Позвонить нам
@@ -236,40 +260,43 @@
     </section>
     <!-- end about section -->
 
-    <!-- track section -->
-    <!-- <section class="track_section layout_padding">
-        <div class="track_bg_box">
-            <img src="{% static 'images/title.jpg' %}" height="auto" alt="">
-        </div>
+    <!-- client section -->
+    <section class="client_section layout_padding">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="heading_container">
-                        <h2>
-                            Track Your Shipment
-                        </h2>
+            <div class="heading_container">
+                <h2>
+                    Что говорит наш <span>клиент</span>
+                </h2>
+            </div>
+            <div class="client_container">
+                <div class="carousel-wrap ">
+                    <div class="owl-carousel">
+                        {% for client in clients %}
+                            <div class="item">
+                                <div class="box">
+                                    <div class="detail-box">
+                                        <p>
+                                            {{ client.content }}
+                                        </p>
+                                    </div>
+                                    <div class="client_id">
+                                        <div class="img-box">
+                                            <img src="{{ client.image.url }}" alt="" class="img-1">
+                                        </div>
+                                        <div class="name">
+                                            <h6>
+                                                {{ client.name }}
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
                     </div>
-                    <p>
-                        Iste reprehenderit maiores facilis saepe cumque molestias. Labore iusto excepturi, laborum
-                        aliquid
-                        pariatur veritatis autem, mollitia sint nesciunt hic error porro.
-                        Deserunt officia unde repellat beatae ipsum sed. Aperiam tempora consectetur voluptas magnam
-                        maxime
-                        asperiores quas similique repudiandae, veritatis reiciendis harum fuga atque.
-                    </p>
-                    <form method="POST">
-                        <input type="text" placeholder="Enter Your Tracking Number"/>
-                        <button type="submit">
-                            Track
-                        </button>
-                    </form>
                 </div>
             </div>
         </div>
-    </section> -->
-    <!-- end track section -->
-
-    <!-- client section -->
+    </section>
 
     <!-- end client section -->
 

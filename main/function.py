@@ -9,9 +9,3 @@ def post_success(request):
         form.save()
         messages.success(request, f"{request.POST.get('name')}")
         return redirect('main:success')
-
-
-
-
-
-

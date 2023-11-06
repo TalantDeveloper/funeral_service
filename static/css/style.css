@@ -492,15 +492,7 @@ a:focus {
   z-index: 2;
 }
 
-.about_section .img-box::before, .about_section .img-box::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 45px;
-  height: 70%;
-  background-color: #04233b;
-  z-index: 3;
-}
+
 
 .about_section .img-box::before {
   left: 0;

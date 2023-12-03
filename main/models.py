@@ -18,3 +18,12 @@ class Service(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Client(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Имя')
+    image = models.ImageField(upload_to='./user/', default='./image/avatar.png')
+    content = models.TextField(verbose_name='содержание')
+
+    def __str__(self):
+        return self.name

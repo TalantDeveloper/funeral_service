@@ -486,28 +486,7 @@ a:focus {
       z-index: 2;
     }
 
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 45px;
-      height: 70%;
-      background-color: $primary2;
-      z-index: 3;
-    }
 
-    &::before {
-      left: 0;
-      z-index: 1;
-      transform: translate(-50%, -50%);
-    }
-
-    &::after {
-      right: 0;
-      z-index: 1;
-      transform: translate(50%, -50%);
-    }
   }
 
   .detail-box {

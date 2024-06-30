@@ -31,3 +31,12 @@ def contact_view(request):
 
 def success_view(request):
     return render(request, 'main/success.html')
+
+
+def bad_url(request, name):
+    return redirect('main:welcome')
+    # services = Service.objects.all()
+    # clients = Client.objects.all()
+    # if request.method == 'POST':
+    #     return post_success(request)
+    # return render(request, 'main/welcome.html', {'services': services, 'clients': clients})
